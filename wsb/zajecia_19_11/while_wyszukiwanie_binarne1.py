@@ -1,10 +1,12 @@
 lista = [-88, -3, 11, 23, 56, 78, 98, 154, 176, 198, 275, 375, 416, 524, 564, 627, 738, 873, 924]
 
-element_do_zalezienia = 0
+element_do_zalezienia = 924
+print(len(lista))
 
 l = 0
 r = len(lista) - 1
-while l + 1 < r:
+c = r
+while True:
     print('Szukam w liście: ', lista[l:r])
 
     c = (l + r) // 2
@@ -16,6 +18,11 @@ while l + 1 < r:
         r = c
     else:
         l = c
+    if l == r or l+1 == r:
+        break
 
 if lista[c] != element_do_zalezienia:
-    print("Element miałby indeks ", c)
+    if element_do_zalezienia < lista[c]:
+        print("Element miałby indeks ", c)
+    else:
+        print("Element miałby indeks ", c+1)

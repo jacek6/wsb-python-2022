@@ -184,62 +184,6 @@ while True:
 
 
 
-Napisz program, który w ustalonej posortowanej liście wyszukuje indeks konkretnego elementu.
-
-	lista = [-88, -3, 11, 23, 56, 78, 98, 154, 176, 198, 275, 375, 416, 524, 564, 627, 738, 873, 924]
-
-Wejście:
-Wartość elementu do znalezienia
-Wyjście:
-Indeks na którym indeksie listy jest ten element, lub jeśli go nie ma informacja o tym na jakim indeksie by się znajdował
-Wymagania:
-Użyj wyszukiwania binarnego z użyciem pętli while
-
-
-
-
-
-### Program while_wyszukiwanie_binarne1
-
-Kod programu:
-```python
-lista = [-88, -3, 11, 23, 56, 78, 98, 154, 176, 198, 275, 375, 416, 524, 564, 627, 738, 873, 924]
-
-element_do_zalezienia = 0
-
-l = 0
-r = len(lista) - 1
-while l + 1 < r:
-    print('Szukam w liście: ', lista[l:r])
-
-    c = (l + r) // 2
-
-    if lista[c] == element_do_zalezienia:
-        print('Znaleziono element n indeksie ', c)
-        break
-    if element_do_zalezienia < lista[c]:
-        r = c
-    else:
-        l = c
-
-if lista[c] != element_do_zalezienia:
-    print("Element miałby indeks ", c)
-```
-
-
-
-Output:
-```
-Szukam w liście:  [-88, -3, 11, 23, 56, 78, 98, 154, 176, 198, 275, 375, 416, 524, 564, 627, 738, 873]
-Szukam w liście:  [-88, -3, 11, 23, 56, 78, 98, 154, 176]
-Szukam w liście:  [-88, -3, 11, 23]
-Szukam w liście:  [-88, -3]
-Element miałby indeks  1
-
-```
-
-
-
 Napisz program, który poczeka aż bęzie pełna minuta
 
 
@@ -262,6 +206,24 @@ print('Pełna minuta jest zaraz...')
 
 Output:
 ```
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
+Czekam na pełną mitutę
 Czekam na pełną mitutę
 Czekam na pełną mitutę
 Czekam na pełną mitutę

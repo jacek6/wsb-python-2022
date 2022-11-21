@@ -37,20 +37,6 @@ w poprawnym numerze PESEL suma cyfr jest podzielna przez 3 lub przez 4.
 
 plik(`while_zadanie_przylad1`)
 
-Napisz program, który w ustalonej posortowanej liście wyszukuje indeks konkretnego elementu.
-
-	lista = [-88, -3, 11, 23, 56, 78, 98, 154, 176, 198, 275, 375, 416, 524, 564, 627, 738, 873, 924]
-
-Wejście:
-Wartość elementu do znalezienia
-Wyjście:
-Indeks na którym indeksie listy jest ten element, lub jeśli go nie ma informacja o tym na jakim indeksie by się znajdował
-Wymagania:
-Użyj wyszukiwania binarnego z użyciem pętli while
-
-
-plik(`while_wyszukiwanie_binarne1`)
-
 Napisz program, który poczeka aż bęzie pełna minuta
 plik(`while_pelna_minuta`)
 
