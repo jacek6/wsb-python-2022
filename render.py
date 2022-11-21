@@ -8,8 +8,9 @@ PREFIX_FILE = 'plik(`'
 
 def run_file(file_path: str):
     file_path = fix_filepath(file_path)
+    os.chdir(os.path.dirname(file_path))
     result = subprocess.run(['C:\\Users\\hp\\PycharmProjects\\pythonProject1\\venv\\Scripts\\python.exe',
-                             file_path], stdout=subprocess.PIPE)
+                             file_path], stdout=subprocess.PIPE, )
     return result.stdout.decode('utf-8')
 
 
@@ -21,7 +22,7 @@ def fix_filepath(file_path):
 
 def read_code(filepath):
     filepath = fix_filepath(filepath)
-    with open(filepath, 'r') as fp:
+    with open(filepath, 'r', encoding='utf-8') as fp:
         return fp.read()
 
 
@@ -46,13 +47,13 @@ Output:
 
 
 def render_notatki(folder, input_filename, output_filename):
-    result = subprocess.run(['C:\\Users\\hp\\PycharmProjects\\pythonProject1\\venv\\Scripts\\python.exe',
-                             os.path.join(folder, 'przyklad_while1.py')], stdout=subprocess.PIPE)
-    print('wygenerowano: ')
-    print(result.stdout.decode('utf-8'))
+    # result = subprocess.run(['C:\\Users\\hp\\PycharmProjects\\pythonProject1\\venv\\Scripts\\python.exe',
+    #                          os.path.join(folder, 'przyklad_while1.py')], stdout=subprocess.PIPE)
+    # print('wygenerowano: ')
+    # print(result.stdout.decode('utf-8'))
     nr_zadania = 1
-    with open(os.path.join(folder, input_filename), 'r') as ifp:
-        with open(os.path.join(folder, output_filename), 'w') as ofp:
+    with open(os.path.join(folder, input_filename), 'r', encoding='utf-8') as ifp:
+        with open(os.path.join(folder, output_filename), 'w', encoding='utf-8') as ofp:
             for orig_line in ifp:
                 line = orig_line.strip()
                 if line.startswith(PREFIX_FILE):
@@ -67,5 +68,7 @@ def render_notatki(folder, input_filename, output_filename):
 
 
 if __name__ == '__main__':
-    render_notatki('C:\\Users\\hp\\PycharmProjects\\pythonProject1\\wsb\\zajecia_16_10', 'notatki_raw.md', 'notatki.md')
+    # render_notatki('C:\\Users\\hp\\PycharmProjects\\pythonProject1\\wsb\\zajecia_16_10', 'notatki_raw.md', 'notatki.md')
+    render_notatki('C:\\Users\\hp\\PycharmProjects\\pythonProject1\\wsb\\zajecia_19_11', 'notatki_raw.md', 'notatki.md')
+    # render_notatki('C:\\Users\\hp\\PycharmProjects\\pythonProject1\\wsb\\zajecia_20_11', 'notatki_raw.md', 'notatki.md')
     print('done')
