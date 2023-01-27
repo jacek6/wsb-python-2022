@@ -36,7 +36,7 @@ Kod programu:
 ```
 \n
 """
-    if 'input(' not in read_code(filepath) and 'auto_backup1' not in filepath:
+    if 'input(' not in read_code(filepath) and 'auto_backup1' not in filepath and 'import pygame' not in read_code(filepath):
         result += f"""
 Output:
 ```
@@ -59,7 +59,7 @@ def render_notatki(folder, input_filename, output_filename):
                 if line.startswith(PREFIX_FILE):
                     file = line[len(PREFIX_FILE):-2]
                     print(f'program {file}')
-                    ofp.write(render_section_python_run(os.path.join(folder, file)))
+                    render_source_code(file, folder, ofp)
                 elif line.lower() == 'zadanie':
                     ofp.write(f'## zadanie {nr_zadania}\n\n')
                     nr_zadania += 1
@@ -67,8 +67,23 @@ def render_notatki(folder, input_filename, output_filename):
                     ofp.write(orig_line.replace('•', ' - '))
 
 
+def render_source_code(file, folder, ofp):
+    if not file.endswith('X'):
+        ofp.write(render_section_python_run(os.path.join(folder, file)))
+    else:
+        for i in range(100):
+            file_path = os.path.join(folder, f'{file}{i}.py')
+            if not os.path.isfile(file_path):
+                break
+            ofp.write(render_section_python_run(file_path))
+
+
+
+
 if __name__ == '__main__':
     # render_notatki('C:\\Users\\hp\\PycharmProjects\\pythonProject1\\wsb\\zajecia_16_10', 'notatki_raw.md', 'notatki.md')
-    render_notatki('C:\\Users\\hp\\PycharmProjects\\pythonProject1\\wsb\\zajecia_19_11', 'notatki_raw.md', 'notatki.md')
+    # render_notatki('C:\\Users\\hp\\PycharmProjects\\pythonProject1\\wsb\\zajecia_19_11', 'notatki_raw.md', 'notatki.md')
     # render_notatki('C:\\Users\\hp\\PycharmProjects\\pythonProject1\\wsb\\zajecia_20_11', 'notatki_raw.md', 'notatki.md')
+    # render_notatki('C:\\Users\\hp\\PycharmProjects\\pythonProject1\\wsb\\zajecia_14_01', 'notatki_raw.md', 'notatki.md')
+    render_notatki('C:\\Users\\hp\\PycharmProjects\\pythonProject1\\wsb\\zajecia_15_01', 'notatki_raw.md', 'notatki.md')
     print('done')

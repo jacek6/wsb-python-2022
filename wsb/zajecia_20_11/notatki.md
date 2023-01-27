@@ -27,15 +27,24 @@ print(zbior.union({1, 2, 'A'}))
 
 Output:
 ```
-{1, 2, 3, 4}
-
-Dodawanie zbiorów
-{1, 2, 3, 4}
-Dodawaie listy:
-[1, 2, 3, 4, 1, 2]
-
-Dodawanie zbiorów
-{1, 2, 3, 4, 'A'}
+{1, 2, 3, 4}
+
+
+
+Dodawanie zbiorów
+
+{1, 2, 3, 4}
+
+Dodawaie listy:
+
+[1, 2, 3, 4, 1, 2]
+
+
+
+Dodawanie zbiorów
+
+{1, 2, 3, 4, 'A'}
+
 
 ```
 
@@ -64,12 +73,18 @@ print("Zbior A ma długość ", len(A), " - zbior A: ", A)
 
 Output:
 ```
-Suma: {1, 2, 3, 4, 40, 30}
-Część wspólna: {1, 2}
-Różnica A-B: {3, 4}
-Różnica B-A: {40, 30}
-Różnica symetryczna: {3, 4, 40, 30}
-Zbior A ma długość  4  - zbior A:  {1, 2, 3, 4}
+Suma: {1, 2, 3, 4, 40, 30}
+
+Część wspólna: {1, 2}
+
+Różnica A-B: {3, 4}
+
+Różnica B-A: {40, 30}
+
+Różnica symetryczna: {3, 4, 40, 30}
+
+Zbior A ma długość  4  - zbior A:  {1, 2, 3, 4}
+
 
 ```
 
@@ -116,11 +131,16 @@ print('ile jest osób z Krzyków chorowało w ostatnim miesiacu: ', len(krzyki.i
 
 Output:
 ```
-ile jest osób, które chorowały w ostatnim roku na Krzykach:  5
-ile jest osób z Krzyków chorowało w ostatnim roku:  5
-ile osób chorowało w ostatnim miesiącu w centrum:  2
-ile osób mieszka w sumie w centrum i na krzykach:  13
-ile jest osób z Krzyków chorowało w ostatnim miesiacu:  2
+ile jest osób, które chorowały w ostatnim roku na Krzykach:  5
+
+ile jest osób z Krzyków chorowało w ostatnim roku:  5
+
+ile osób chorowało w ostatnim miesiącu w centrum:  2
+
+ile osób mieszka w sumie w centrum i na krzykach:  13
+
+ile jest osób z Krzyków chorowało w ostatnim miesiacu:  2
+
 
 ```
 
@@ -174,13 +194,20 @@ print('teraz NFZ to: ', NFZ)
 
 Output:
 ```
-każdy, kto chorował w ostatnim miesiącu, jednocześnie chorował w ostatnim roku.
-Ktoś mieszka na krzykach i w centrum:  {2345, 3254}
-ktoś jest poza bazą NFZ, ze zbioru:  chorzy_rok  te osoby to  {3098}
-ktoś jest poza bazą NFZ, ze zbioru:  chorzy_miesiac  te osoby to  {3098}
-ktoś jest poza bazą NFZ, ze zbioru:  centrum  te osoby to  {3987}
-dopisze do NFZ osoby:  {3098, 3987}
-teraz NFZ to:  {4544, 8769, 6532, 7688, 6732, 1234, 1298, 3476, 3987, 3098, 1243, 3423, 7648, 6435, 2345, 2356, 3254, 5436}
+każdy, kto chorował w ostatnim miesiącu, jednocześnie chorował w ostatnim roku.
+
+Ktoś mieszka na krzykach i w centrum:  {2345, 3254}
+
+ktoś jest poza bazą NFZ, ze zbioru:  chorzy_rok  te osoby to  {3098}
+
+ktoś jest poza bazą NFZ, ze zbioru:  chorzy_miesiac  te osoby to  {3098}
+
+ktoś jest poza bazą NFZ, ze zbioru:  centrum  te osoby to  {3987}
+
+dopisze do NFZ osoby:  {3098, 3987}
+
+teraz NFZ to:  {4544, 8769, 6532, 7688, 6732, 1234, 1298, 3476, 3987, 3098, 1243, 3423, 7648, 6435, 2345, 2356, 3254, 5436}
+
 
 ```
 
@@ -233,24 +260,42 @@ print('wszystkich mężczyzn jest ', len(meski))
 
 Output:
 ```
-
-W zbiorze  chorzy_rok
-kobiety to  {4544, 1234, 3476, 3254, 3098, 5436}
-mężczyźni to  {8769, 3423}
-
-W zbiorze  chorzy_miesiac
-kobiety to  {4544, 1234, 3098, 3476}
-mężczyźni to  {3423}
-
-W zbiorze  krzyki
-kobiety to  {4544, 6532, 5436, 3254}
-mężczyźni to  {8769, 1243, 3423, 2345}
-
-W zbiorze  centrum
-kobiety to  {7648, 1234, 3476, 2356, 3254}
-mężczyźni to  {2345, 3987}
-wszystkich kobiet jest  9
-wszystkich mężczyzn jest  5
+
+
+W zbiorze  chorzy_rok
+
+kobiety to  {4544, 1234, 3476, 3254, 3098, 5436}
+
+mężczyźni to  {8769, 3423}
+
+
+
+W zbiorze  chorzy_miesiac
+
+kobiety to  {4544, 1234, 3098, 3476}
+
+mężczyźni to  {3423}
+
+
+
+W zbiorze  krzyki
+
+kobiety to  {4544, 6532, 5436, 3254}
+
+mężczyźni to  {8769, 1243, 3423, 2345}
+
+
+
+W zbiorze  centrum
+
+kobiety to  {7648, 1234, 3476, 2356, 3254}
+
+mężczyźni to  {2345, 3987}
+
+wszystkich kobiet jest  9
+
+wszystkich mężczyzn jest  5
+
 
 ```
 
@@ -295,24 +340,42 @@ print('wszystkich mężczyzn jest ', len(meski))
 
 Output:
 ```
-
-W zbiorze  chorzy_rok
-kobiety to  {4544, 1234, 3476, 3254, 3098, 5436}
-mężczyźni to  {8769, 3423}
-
-W zbiorze  chorzy_miesiac
-kobiety to  {4544, 1234, 3098, 3476}
-mężczyźni to  {3423}
-
-W zbiorze  krzyki
-kobiety to  {4544, 6532, 5436, 3254}
-mężczyźni to  {8769, 1243, 3423, 2345}
-
-W zbiorze  centrum
-kobiety to  {7648, 1234, 3476, 2356, 3254}
-mężczyźni to  {2345, 3987}
-wszystkich kobiet jest  9
-wszystkich mężczyzn jest  5
+
+
+W zbiorze  chorzy_rok
+
+kobiety to  {4544, 1234, 3476, 3254, 3098, 5436}
+
+mężczyźni to  {8769, 3423}
+
+
+
+W zbiorze  chorzy_miesiac
+
+kobiety to  {4544, 1234, 3098, 3476}
+
+mężczyźni to  {3423}
+
+
+
+W zbiorze  krzyki
+
+kobiety to  {4544, 6532, 5436, 3254}
+
+mężczyźni to  {8769, 1243, 3423, 2345}
+
+
+
+W zbiorze  centrum
+
+kobiety to  {7648, 1234, 3476, 2356, 3254}
+
+mężczyźni to  {2345, 3987}
+
+wszystkich kobiet jest  9
+
+wszystkich mężczyzn jest  5
+
 
 ```
 
@@ -352,13 +415,20 @@ print('to powienien byc podzbior osob z centrum ', centrum.difference(chorzy_rok
 
 Output:
 ```
-kobiety z Krzyków, które były chore w ostatnim roku  {4544, 5436, 3254}
-wypiszmy mężczyzn z Centrum, którzy NIE byli chorzy w ostatnim roku  {2345, 3987}
-centrum = {7648, 1234, 3987, 2356, 3476, 3254, 2345}
-chorzy_rok = {4544, 8769, 1234, 3476, 3254, 3098, 5436, 3423}
-centrum.difference(chorzy_rok) = {7648, 2345, 3987, 2356}
-to powienien byc zbior pusty  set()
-to powienien byc podzbior osob z centrum  {7648, 2345, 3987, 2356}
+kobiety z Krzyków, które były chore w ostatnim roku  {4544, 5436, 3254}
+
+wypiszmy mężczyzn z Centrum, którzy NIE byli chorzy w ostatnim roku  {2345, 3987}
+
+centrum = {7648, 1234, 3987, 2356, 3476, 3254, 2345}
+
+chorzy_rok = {4544, 8769, 1234, 3476, 3254, 3098, 5436, 3423}
+
+centrum.difference(chorzy_rok) = {7648, 2345, 3987, 2356}
+
+to powienien byc zbior pusty  set()
+
+to powienien byc podzbior osob z centrum  {7648, 2345, 3987, 2356}
+
 
 ```
 
@@ -400,11 +470,16 @@ print('x ', x, ', y ', y)
 
 Output:
 ```
-lista  [1, 2, 3]
-krotka  (1, 2, 3)
-krotka2  (10, 20, 30)
-x  10 , y  20 , z  30
-x  1 , y  2
+lista  [1, 2, 3]
+
+krotka  (1, 2, 3)
+
+krotka2  (10, 20, 30)
+
+x  10 , y  20 , z  30
+
+x  1 , y  2
+
 
 ```
 
@@ -583,7 +658,8 @@ print(zlicz_slowa(['ala', 'ma', 'kota', 'ala']))
 
 Output:
 ```
-defaultdict(<class 'int'>, {'ala': 2, 'ma': 1, 'kota': 1})
+defaultdict(<class 'int'>, {'ala': 2, 'ma': 1, 'kota': 1})
+
 
 ```
 
@@ -613,9 +689,12 @@ print('po ', domyslny_slownik)
 
 Output:
 ```
-przed  defaultdict(<class 'int'>, {})
-0
-po  defaultdict(<class 'int'>, {'a': 0})
+przed  defaultdict(<class 'int'>, {})
+
+0
+
+po  defaultdict(<class 'int'>, {'a': 0})
+
 
 ```
 
@@ -645,10 +724,14 @@ print(domyslny_slownik['a'])
 
 Output:
 ```
-None
-wartosc gdy nie zjadziemy
-[]
-50
+None
+
+wartosc gdy nie zjadziemy
+
+[]
+
+50
+
 
 ```
 
