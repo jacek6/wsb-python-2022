@@ -71,9 +71,9 @@ def render_source_code(file, folder, ofp):
     if not file.endswith('X'):
         ofp.write(render_section_python_run(os.path.join(folder, file)))
     else:
-        for i in range(100):
-            file_path = os.path.join(folder, f'{file}{i}.py')
-            if not os.path.isfile(file_path):
+        for i in range(1, 100):
+            file_path = os.path.join(folder, f'{file[:-1]}{i}.py')
+            if not os.path.exists(file_path):
                 break
             ofp.write(render_section_python_run(file_path))
 
